@@ -32,7 +32,7 @@ sidebar.html
 npm install
 ```
 
-2. Build the extension (required before loading in Chrome):
+2. Build the extension:
 
 ```bash
 npm run build
@@ -43,7 +43,7 @@ npm run build
 - Go to `chrome://extensions`
 - Enable **Developer mode**
 - Click **Load unpacked**
-- Select the `dist/` folder (the manifest lives there after the build step)
+- Select the `dist/` folder
 
 4. Open any webpage to see the injected sidebar.
 
