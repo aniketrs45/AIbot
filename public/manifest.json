@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Ani AI Sidebar",
+  "description": "React + Tailwind sidebar UI with content script and mock API.",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "Ani AI Sidebar"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "permissions": ["tabs"],
+  "host_permissions": ["<all_urls>"]
+}

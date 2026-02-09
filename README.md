@@ -5,7 +5,8 @@ Chrome Manifest V3 extension with a React + Tailwind sidebar UI, content script 
 ## Folder structure
 
 ```
-manifest.json
+public/
+  manifest.json
 src/
   background.ts
   contentScript.ts
@@ -31,18 +32,18 @@ sidebar.html
 npm install
 ```
 
-2. Build the extension (required before loading in Chrome):
+2. Build the extension:
 
 ```bash
 npm run build
 ```
 
-3. Load the extension in Chrome (select the repo root after building):
+3. Load the extension in Chrome:
 
 - Go to `chrome://extensions`
 - Enable **Developer mode**
 - Click **Load unpacked**
-- Select the repository root (the manifest references the `dist/` output)
+- Select the `dist/` folder
 
 4. Open any webpage to see the injected sidebar.
 

@@ -18,7 +18,7 @@ const createSidebar = () => {
   ].join(";");
 
   const iframe = document.createElement("iframe");
-  iframe.src = chrome.runtime.getURL("dist/sidebar.html");
+  iframe.src = chrome.runtime.getURL("sidebar.html");
   iframe.title = "AI Sidebar";
   iframe.style.cssText = "border: none; width: 100%; height: 100%;";
 
